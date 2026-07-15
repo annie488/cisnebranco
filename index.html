@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coral Cisne Branco — Instituto Cisne Branco Cultural · Foz do Iguaçu</title>
-<meta name="description" content="Há 15 anos, um coro inteiramente voluntário transforma vidas pela música em Foz do Iguaçu. Venha cantar, apoiar ou convidar o Coral Cisne Branco, do Instituto Cisne Branco Cultural.">
+<title>Coral Cisne Branco — Coro Voluntário em Foz do Iguaçu</title>
+<meta name="description" content="Coro inteiramente voluntário há 15 anos em Foz do Iguaçu. Venha cantar, apoiar ou convidar o Coral Cisne Branco, do Instituto Cisne Branco Cultural.">
+
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <meta name="keywords" content="Coral Cisne Branco, Instituto Cisne Branco Cultural, coral em Foz do Iguaçu, cantar em coral, voluntariado música, coro Tríplice Fronteira, coral voluntário Paraná">
 <meta name="author" content="Instituto Cisne Branco Cultural">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
@@ -19,7 +23,7 @@
 <meta property="og:site_name" content="Coral Cisne Branco">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:locale:alternate" content="es_ES">
-<meta property="og:title" content="Coral Cisne Branco — Instituto Cisne Branco Cultural · Foz do Iguaçu">
+<meta property="og:title" content="Coral Cisne Branco — Coro Voluntário em Foz do Iguaçu">
 <meta property="og:description" content="Há 15 anos, cerca de 40 vozes voluntárias transformam vidas pela música em Foz do Iguaçu. Venha cantar, apoiar ou convidar o coral.">
 <meta property="og:url" content="https://www.institutocisnebranco.com/">
 <meta property="og:image" content="https://www.institutocisnebranco.com/images/og-cover.jpg">
@@ -172,6 +176,21 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
 .row p{color:var(--ink-soft);font-size:.98rem;max-width:52ch}
 .row:hover h3{font-style:italic;color:var(--wine)}
 
+/* galeria */
+.gal{padding:6.5rem 0;border-top:1px solid var(--line)}
+.gal-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:1rem;margin-bottom:2.8rem}
+.gal-head h2{font-size:clamp(2rem,4.2vw,3.2rem)}
+.gal figure{margin:0;min-width:0}
+.gal img{width:100%;height:auto;object-fit:cover;filter:saturate(.92) contrast(1.02)}
+.gal figcaption{font-family:var(--sans);font-size:.75rem;line-height:1.5;color:var(--ink-soft);margin-top:.85rem;padding-top:.75rem;border-top:1px solid var(--line)}
+.gal-lead{margin-bottom:1.7rem}
+.gal-lead img{aspect-ratio:16/9}
+.gal-duo{display:grid;gap:1.7rem;margin-bottom:1.7rem;align-items:start}
+.gal-duo:last-child{margin-bottom:0}
+.gal-duo.a{grid-template-columns:.78fr 1.5fr}
+.gal-duo.b{grid-template-columns:1.5fr .78fr}
+.gal-duo img{height:clamp(260px,32vw,440px)}
+
 /* quote */
 .quote{background:var(--ink);color:var(--paper);padding:7rem 0}
 .quote .wrap{max-width:920px;text-align:center}
@@ -242,6 +261,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
   .join-grid{grid-template-columns:1fr}
   .jcol{margin-right:0}
   .foot-grid{grid-template-columns:1fr}
+  .gal-duo.a,.gal-duo.b{grid-template-columns:1fr}
+  .gal-duo img{height:auto;aspect-ratio:4/3}
   .foot-bottom{flex-direction:column;align-items:flex-start;gap:.55rem}
   .wpp span{display:none}
   .wpp{padding:.9rem;border-radius:50%}
@@ -261,6 +282,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
       <nav class="nav">
         <a href="#sobre" data-i18n="nav_sobre">Sobre</a>
         <a href="#atuacao" data-i18n="nav_proj">Projetos</a>
+        <a href="#galeria" data-i18n="nav_gal">Galeria</a>
         <a href="#participar" data-i18n="nav_part">Participar</a>
         <a href="#contato" data-i18n="nav_cont">Contato</a>
         <a href="#participar" class="apoiar" data-i18n="nav_apoiar">Apoie o coral</a>
@@ -337,6 +359,48 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
     <div class="row rv"><div class="idx">02</div><h3 data-i18n="r2h">Visitas afetivas</h3><p data-i18n="r2p">Encontros em asilos, levando memória, companhia e alegria a quem mais precisa de um abraço em forma de canção.</p></div>
     <div class="row rv"><div class="idx">03</div><h3 data-i18n="r3h">Cultura na cidade</h3><p data-i18n="r3p">Cantatas de Natal em espaços públicos e participação no Festival de Corais das Três Fronteiras, celebrando a integração da região.</p></div>
     <div class="row rv"><div class="idx">04</div><h3 data-i18n="r4h">Formação de novas vozes</h3><p data-i18n="r4p">Parcerias com jovens da Guarda Mirim e da Itaipu Binacional, aproximando novas gerações da música e dos valores do voluntariado.</p></div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="gal" id="galeria">
+  <div class="wrap">
+    <div class="gal-head">
+      <h2 data-i18n="gal_h2">A voz<br>em cena</h2>
+      <p class="label" data-i18n="gal_label">Galeria</p>
+    </div>
+
+    <figure class="gal-lead rv">
+      <img src="/images/coral-outubro-rosa-camara.webp" width="1600" height="900" loading="lazy" decoding="async"
+           alt="Coral Cisne Branco cantando de camiseta rosa na Câmara Municipal de Foz do Iguaçu, com a regente de costas em primeiro plano">
+      <figcaption data-i18n="gal_c1">Campanha Outubro Rosa, na Câmara Municipal de Foz do Iguaçu.</figcaption>
+    </figure>
+
+    <div class="gal-duo a">
+      <figure class="rv">
+        <img src="/images/coral-tunicas-instituto.webp" width="600" height="800" loading="lazy" decoding="async"
+             alt="Integrantes do coral com túnicas azuis e brancas trazendo o brasão do Instituto Cisne Branco Cultural">
+        <figcaption data-i18n="gal_c2">As túnicas trazem o brasão do Instituto Cisne Branco Cultural.</figcaption>
+      </figure>
+      <figure class="rv">
+        <img src="/images/coral-camara-tunicas.webp" width="1100" height="618" loading="lazy" decoding="async"
+             alt="Coral Cisne Branco de túnicas douradas cantando em sessão na Câmara de Vereadores de Foz do Iguaçu">
+        <figcaption data-i18n="gal_c3">Apresentação em sessão na Câmara de Vereadores.</figcaption>
+      </figure>
+    </div>
+
+    <div class="gal-duo b">
+      <figure class="rv">
+        <img src="/images/coral-novembro-azul.webp" width="1100" height="534" loading="lazy" decoding="async"
+             alt="Coral Cisne Branco reunido com representantes civis e militares na campanha Novembro Azul">
+        <figcaption data-i18n="gal_c4">Novembro Azul, ao lado da sociedade civil e militar.</figcaption>
+      </figure>
+      <figure class="rv">
+        <img src="/images/coral-teatro.webp" width="600" height="800" loading="lazy" decoding="async"
+             alt="Integrantes do Coral Cisne Branco sentadas na plateia, de túnica, momentos antes de uma apresentação">
+        <figcaption data-i18n="gal_c5">Minutos antes de subir ao palco.</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -426,7 +490,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
 <script>
 const I18N={
   pt:{
-    nav_sobre:"Sobre",nav_proj:"Projetos",nav_part:"Participar",nav_cont:"Contato",nav_apoiar:"Apoie o coral",
+    nav_sobre:"Sobre",nav_proj:"Projetos",nav_gal:"Galeria",nav_part:"Participar",nav_cont:"Contato",nav_apoiar:"Apoie o coral",
     hero_est:"Coral desde 2011 &nbsp;·&nbsp; Instituto desde 2022 &nbsp;·&nbsp; Foz do Iguaçu",
     hero_h1:"Uma cidade<br>inteira cabe<br>em um <em>coro.</em>",
     hero_lede:"Há quinze anos, cerca de quarenta vozes voluntárias se encontram para cantar — e a música vira ponte entre pessoas, histórias e realidades na Tríplice Fronteira.",
@@ -442,6 +506,12 @@ const I18N={
     r3h:"Cultura na cidade",r3p:"Cantatas de Natal em espaços públicos e participação no Festival de Corais das Três Fronteiras, celebrando a integração da região.",
     r4h:"Formação de novas vozes",r4p:"Parcerias com jovens da Guarda Mirim e da Itaipu Binacional, aproximando novas gerações da música e dos valores do voluntariado.",
     q_label:"Neusa Miguens · fundadora",
+    gal_h2:"A voz<br>em cena",gal_label:"Galeria",
+    gal_c1:"Campanha Outubro Rosa, na Câmara Municipal de Foz do Iguaçu.",
+    gal_c2:"As túnicas trazem o brasão do Instituto Cisne Branco Cultural.",
+    gal_c3:"Apresentação em sessão na Câmara de Vereadores.",
+    gal_c4:"Novembro Azul, ao lado da sociedade civil e militar.",
+    gal_c5:"Minutos antes de subir ao palco.",
     q_text:"“Assim como no jazz, onde diferentes vozes e instrumentos dialogam, o coral reúne histórias, timbres e vivências diversas que se encontram na música. Esse espírito transforma o coral em <em>mais do que um grupo artístico</em>: ele se torna uma comunidade.”",
     join_h2:"Três formas de fazer parte desta história",
     j1h:"Apoie o instituto",j1p:"Sua contribuição sustenta uma obra cultural e beneficente inteiramente voluntária em Foz do Iguaçu.",j1l:"Quero apoiar &nbsp;→",
@@ -458,7 +528,7 @@ const I18N={
     wpp:"Fale conosco"
   },
   es:{
-    nav_sobre:"Acerca",nav_proj:"Proyectos",nav_part:"Participar",nav_cont:"Contacto",nav_apoiar:"Apoya al coro",
+    nav_sobre:"Acerca",nav_proj:"Proyectos",nav_gal:"Galería",nav_part:"Participar",nav_cont:"Contacto",nav_apoiar:"Apoya al coro",
     hero_est:"Coro desde 2011 &nbsp;·&nbsp; Instituto desde 2022 &nbsp;·&nbsp; Foz de Iguazú",
     hero_h1:"Una ciudad<br>entera cabe<br>en un <em>coro.</em>",
     hero_lede:"Desde hace quince años, cerca de cuarenta voces voluntarias se reúnen para cantar — y la música se vuelve un puente entre personas, historias y realidades en la Triple Frontera.",
@@ -474,6 +544,12 @@ const I18N={
     r3h:"Cultura en la ciudad",r3p:"Cantatas de Navidad en espacios públicos y participación en el Festival de Coros de las Tres Fronteras, celebrando la integración de la región.",
     r4h:"Formación de nuevas voces",r4p:"Alianzas con jóvenes de la Guarda Mirim y de Itaipú Binacional, acercando nuevas generaciones a la música y a los valores del voluntariado.",
     q_label:"Neusa Miguens · fundadora",
+    gal_h2:"La voz<br>en escena",gal_label:"Galería",
+    gal_c1:"Campaña Octubre Rosa, en la Cámara Municipal de Foz de Iguazú.",
+    gal_c2:"Las túnicas llevan el escudo del Instituto Cisne Branco Cultural.",
+    gal_c3:"Presentación en sesión de la Cámara de Concejales.",
+    gal_c4:"Noviembre Azul, junto a la sociedad civil y militar.",
+    gal_c5:"Minutos antes de subir al escenario.",
     q_text:"“Así como en el jazz, donde diferentes voces e instrumentos dialogan, el coro reúne historias, timbres y vivencias diversas que se encuentran en la música. Ese espíritu transforma al coro en <em>algo más que un grupo artístico</em>: se convierte en una comunidad.”",
     join_h2:"Tres formas de ser parte de esta historia",
     j1h:"Apoya al instituto",j1p:"Tu contribución sostiene una obra cultural y benéfica enteramente voluntaria en Foz de Iguazú.",j1l:"Quiero apoyar &nbsp;→",
