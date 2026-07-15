@@ -1,1 +1,6 @@
 .DS_Store
+
+# Nunca versionar credenciais — este repositorio e publico
+.mcp.json
+.env
+*.token
