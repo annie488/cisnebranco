@@ -34,20 +34,41 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":["NGO","MusicGroup"],
-  "name":"Coral Cisne Branco",
-  "alternateName":"Instituto Cisne Branco Cultural",
-  "url":"https://www.institutocisnebranco.com/",
-  "logo":"https://www.institutocisnebranco.com/images/logo.png",
-  "image":"https://www.institutocisnebranco.com/images/og-cover.jpg",
-  "description":"Coro inteiramente voluntário fundado em 28 de junho de 2011 em Foz do Iguaçu, mantido pelo Instituto Cisne Branco Cultural — instituição sem fins lucrativos que assiste à sociedade civil e militar em projetos beneficentes por meio da música.",
-  "foundingDate":"2011-06-28",
-  "founder":{"@type":"Person","name":"Neusa da Motta Miguens"},
-  "genre":["MPB","Música sacra","Sertanejo","Música internacional"],
-  "award":"Moção de Aplauso nº 18/2025 — Câmara Municipal de Foz do Iguaçu",
-  "areaServed":"Foz do Iguaçu e Tríplice Fronteira",
-  "location":{"@type":"Place","address":{"@type":"PostalAddress","addressLocality":"Foz do Iguaçu","addressRegion":"PR","addressCountry":"BR"}},
-  "sameAs":[]
+  "@graph":[
+    {
+      "@type":"NGO",
+      "@id":"https://www.institutocisnebranco.com/#instituto",
+      "name":"Instituto Cisne Branco Cultural",
+      "legalName":"Instituto Cisne Branco Cultural",
+      "taxID":"46.369.725/0001-52",
+      "url":"https://www.institutocisnebranco.com/",
+      "logo":"https://www.institutocisnebranco.com/images/logo.png",
+      "image":"https://www.institutocisnebranco.com/images/og-cover.jpg",
+      "description":"Instituição sem fins lucrativos de Foz do Iguaçu que assiste à sociedade civil e militar em projetos beneficentes, tendo a música como ferramenta de transformação social. Mantém o Coral Cisne Branco.",
+      "foundingDate":"2022-05-05",
+      "founder":{"@type":"Person","name":"Neusa da Motta Miguens"},
+      "areaServed":"Foz do Iguaçu e Tríplice Fronteira",
+      "address":{"@type":"PostalAddress","addressLocality":"Foz do Iguaçu","addressRegion":"PR","addressCountry":"BR"},
+      "subOrganization":{"@id":"https://www.institutocisnebranco.com/#coral"},
+      "sameAs":[]
+    },
+    {
+      "@type":"MusicGroup",
+      "@id":"https://www.institutocisnebranco.com/#coral",
+      "name":"Coral Cisne Branco",
+      "url":"https://www.institutocisnebranco.com/",
+      "image":"https://www.institutocisnebranco.com/images/og-cover.jpg",
+      "description":"Coro inteiramente voluntário fundado em 28 de junho de 2011 em Foz do Iguaçu. Reúne cerca de 40 vozes voluntárias de todas as idades e usa a música como ferramenta de transformação social na Tríplice Fronteira.",
+      "foundingDate":"2011-06-28",
+      "foundingLocation":{"@type":"Place","name":"Foz do Iguaçu, PR, Brasil"},
+      "founder":{"@type":"Person","name":"Neusa da Motta Miguens"},
+      "parentOrganization":{"@id":"https://www.institutocisnebranco.com/#instituto"},
+      "genre":["MPB","Música sacra","Sertanejo","Música internacional"],
+      "award":"Moção de Aplauso nº 18/2025 — Câmara Municipal de Foz do Iguaçu",
+      "areaServed":"Foz do Iguaçu e Tríplice Fronteira",
+      "location":{"@type":"Place","address":{"@type":"PostalAddress","addressLocality":"Foz do Iguaçu","addressRegion":"PR","addressCountry":"BR"}}
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -177,7 +198,9 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
 .foot li{margin-bottom:.6rem}
 .foot li a{font-size:.92rem;border-bottom:1px solid transparent;transition:.25s;padding-bottom:2px}
 .foot li a:hover{border-color:var(--ink)}
-.foot-bottom{border-top:1px solid var(--line);padding-top:1.6rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;font-size:.78rem;color:var(--ink-soft)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:1.6rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem 1.6rem;font-size:.78rem;color:var(--ink-soft)}
+.foot-bottom a{border-bottom:1px solid var(--line);padding-bottom:1px;transition:border-color .25s}
+.foot-bottom a:hover{border-color:var(--ink)}
 
 /* whatsapp float */
 .wpp{position:fixed;right:1.6rem;bottom:1.6rem;z-index:50;display:flex;align-items:center;gap:.6rem;background:var(--ink);color:var(--paper);padding:.85rem 1.25rem;border-radius:999px;font-size:.82rem;letter-spacing:.04em;box-shadow:0 8px 30px rgba(30,27,22,.28);transition:.3s}
@@ -217,6 +240,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
   .join-grid{grid-template-columns:1fr}
   .jcol{margin-right:0}
   .foot-grid{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column;align-items:flex-start;gap:.55rem}
   .wpp span{display:none}
   .wpp{padding:.9rem;border-radius:50%}
 }
@@ -252,7 +276,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="est" data-i18n="hero_est">Instituto Cisne Branco Cultural &nbsp;·&nbsp; Foz do Iguaçu &nbsp;·&nbsp; desde 2011</p>
+      <p class="est" data-i18n="hero_est">Coral desde 2011 &nbsp;·&nbsp; Instituto desde 2022 &nbsp;·&nbsp; Foz do Iguaçu</p>
       <h1 data-i18n="hero_h1">Uma cidade<br>inteira cabe<br>em um <em>coro.</em></h1>
       <p class="lede" data-i18n="hero_lede">Há quinze anos, cerca de quarenta vozes voluntárias se encontram para cantar — e a música vira ponte entre pessoas, histórias e realidades na Tríplice Fronteira.</p>
       <div class="hero-cta">
@@ -385,7 +409,9 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
     </div>
     <div class="foot-bottom">
       <span>© 2026 Instituto Cisne Branco Cultural</span>
+      <span>CNPJ 46.369.725/0001-52</span>
       <span data-i18n="foot_place">Foz do Iguaçu · Tríplice Fronteira</span>
+      <span data-i18n="foot_credit">Site por <a href="https://www.inficomunicacao.com.br" target="_blank" rel="noopener">INFI Comunicação</a></span>
     </div>
   </div>
 </footer>
@@ -400,7 +426,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacin
 const I18N={
   pt:{
     nav_sobre:"Sobre",nav_proj:"Projetos",nav_part:"Participar",nav_cont:"Contato",nav_apoiar:"Apoie o coral",
-    hero_est:"Instituto Cisne Branco Cultural &nbsp;·&nbsp; Foz do Iguaçu &nbsp;·&nbsp; desde 2011",
+    hero_est:"Coral desde 2011 &nbsp;·&nbsp; Instituto desde 2022 &nbsp;·&nbsp; Foz do Iguaçu",
     hero_h1:"Uma cidade<br>inteira cabe<br>em um <em>coro.</em>",
     hero_lede:"Há quinze anos, cerca de quarenta vozes voluntárias se encontram para cantar — e a música vira ponte entre pessoas, histórias e realidades na Tríplice Fronteira.",
     hero_btn:"Apoie o coral",hero_cantar:"Quero cantar &nbsp;→",
@@ -427,11 +453,12 @@ const I18N={
     q4:"Como posso apoiar o instituto?",a4:"Você pode apoiar como voluntário, com doações ao Instituto Cisne Branco Cultural ou convidando o coral para o seu evento. Toda contribuição ajuda a manter viva uma obra cultural e beneficente em Foz do Iguaçu.",
     foot_desc:"Instituto Cisne Branco Cultural — instituição sem fins lucrativos que assiste à sociedade civil e militar em projetos beneficentes, tendo a música como ferramenta de transformação. Foz do Iguaçu, Paraná.",
     foot_nav:"Navegação",foot_cont:"Contato",foot_wpp:"Grupo no WhatsApp",foot_mail:"E-mail (a definir)",foot_ig:"Instagram (a definir)",foot_place:"Foz do Iguaçu · Tríplice Fronteira",
+    foot_credit:"Site por <a href=\"https://www.inficomunicacao.com.br\" target=\"_blank\" rel=\"noopener\">INFI Comunicação</a>",
     wpp:"Fale conosco"
   },
   es:{
     nav_sobre:"Acerca",nav_proj:"Proyectos",nav_part:"Participar",nav_cont:"Contacto",nav_apoiar:"Apoya al coro",
-    hero_est:"Instituto Cisne Branco Cultural &nbsp;·&nbsp; Foz de Iguazú &nbsp;·&nbsp; desde 2011",
+    hero_est:"Coro desde 2011 &nbsp;·&nbsp; Instituto desde 2022 &nbsp;·&nbsp; Foz de Iguazú",
     hero_h1:"Una ciudad<br>entera cabe<br>en un <em>coro.</em>",
     hero_lede:"Desde hace quince años, cerca de cuarenta voces voluntarias se reúnen para cantar — y la música se vuelve un puente entre personas, historias y realidades en la Triple Frontera.",
     hero_btn:"Apoya al coro",hero_cantar:"Quiero cantar &nbsp;→",
@@ -458,6 +485,7 @@ const I18N={
     q4:"¿Cómo puedo apoyar al instituto?",a4:"Puedes apoyar como voluntario, con donaciones al Instituto Cisne Branco Cultural o invitando al coro a tu evento. Cada contribución ayuda a mantener viva una obra cultural y benéfica en Foz de Iguazú.",
     foot_desc:"Instituto Cisne Branco Cultural — institución sin fines de lucro que asiste a la sociedad civil y militar en proyectos benéficos, teniendo la música como herramienta de transformación. Foz de Iguazú, Paraná.",
     foot_nav:"Navegación",foot_cont:"Contacto",foot_wpp:"Grupo de WhatsApp",foot_mail:"E-mail (a definir)",foot_ig:"Instagram (a definir)",foot_place:"Foz de Iguazú · Triple Frontera",
+    foot_credit:"Sitio por <a href=\"https://www.inficomunicacao.com.br\" target=\"_blank\" rel=\"noopener\">INFI Comunicação</a>",
     wpp:"Habla con nosotros"
   }
 };

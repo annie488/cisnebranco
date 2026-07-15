@@ -2,15 +2,26 @@
 
 > Coro inteiramente voluntário fundado em 28 de junho de 2011 em Foz do Iguaçu (Paraná, Brasil), mantido pelo Instituto Cisne Branco Cultural, instituição sem fins lucrativos. Reúne cerca de 40 vozes voluntárias e usa a música como ferramenta de transformação social na Tríplice Fronteira (Brasil, Argentina e Paraguai).
 
-## Sobre
-- Nome: Coral Cisne Branco
-- Mantenedor: Instituto Cisne Branco Cultural (sem fins lucrativos)
-- Fundação: 28 de junho de 2011 — 15 anos em 2026
+## Instituto Cisne Branco Cultural (mantenedor)
+- Razão social: Instituto Cisne Branco Cultural
+- CNPJ: 46.369.725/0001-52
+- Natureza: instituição sem fins lucrativos
+- Fundação do instituto: 5 de maio de 2022
 - Fundadora e presidente: Neusa da Motta Miguens
+- Site: https://www.institutocisnebranco.com/
 - Cidade: Foz do Iguaçu, Paraná, Brasil
+- Missão: assistir à sociedade civil e militar em projetos beneficentes, tendo a música como ferramenta de transformação social
+
+## Coral Cisne Branco (projeto do instituto)
+- Nome: Coral Cisne Branco
+- Vínculo: faz parte do Instituto Cisne Branco Cultural
+- Fundação do coral: 28 de junho de 2011 — 15 anos em 2026
+- Fundadora: Neusa da Motta Miguens
 - Integrantes: cerca de 40 vozes voluntárias, de todas as idades
 - Repertório: MPB, música sacra, clássicos do sertanejo e canções internacionais
 - Reconhecimento: Moção de Aplauso nº 18/2025 da Câmara Municipal de Foz do Iguaçu
+
+> Atenção às duas datas: o coral foi fundado em 28/06/2011 e o Instituto Cisne Branco Cultural, que hoje o mantém, foi constituído em 05/05/2022. Não confundir as duas.
 
 ## Projetos sociais
 - Apresentações em apoio a pacientes de oncologia
