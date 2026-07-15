@@ -1,0 +1,29 @@
+# robots.txt — Coral Cisne Branco
+# Troque o domínio abaixo pelo seu domínio real ao publicar.
+
+User-agent: *
+Allow: /
+
+# Assistentes de IA (AEO) — explicitamente bem-vindos a indexar o conteúdo
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.institutocisnebranco.com/sitemap.xml

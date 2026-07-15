@@ -1,0 +1,23 @@
+COLOQUE AS FOTOS DO CORAL AQUI
+==============================
+
+Esta pasta ("images") é onde ficam as imagens do site.
+
+Imagens importantes (use exatamente estes nomes para já funcionarem):
+
+1. og-cover.jpg
+   - Foto de capa para quando o link for compartilhado no WhatsApp,
+     Instagram, Facebook e também usada por buscadores e IAs.
+   - Tamanho ideal: 1200 x 630 pixels (horizontal).
+
+2. logo.png
+   - Logotipo do coral/instituto (fundo transparente, se possível).
+
+Outras fotos do coral podem ser colocadas aqui também (ex.: coro1.jpg,
+apresentacao.jpg, etc.). Depois é só pedir para incluí-las nas seções
+do site (hero, projetos, galeria).
+
+Dicas:
+- Prefira fotos horizontais e com boa luz.
+- Evite arquivos muito pesados: até ~500 KB cada deixa o site rápido.
+- Formatos aceitos: .jpg, .png ou .webp.
